@@ -16,7 +16,7 @@ public class JwtUtils {
 	public boolean validateJwt(String authToken) {
 		try {
 			Jwts.parser().setSigningKey(
-					"semillaidDAJ919AKAadopakdakoAKDOAjdk1j9dj1j89dajidjakdj81jd81j8d18j8do0109aopzkd9191jada019") 
+					"semillakjdajodajiqwjdkoqdmaskldmaiodmiocmio12j39812jiodajd89wjdi1moadkd9w9kd1kddakdmakodjid1j90d1jalkdlkzp1k010938fldo9k1") 
 					.parseClaimsJws(authToken);
 			return true;
 		} catch (Exception e) {
@@ -29,7 +29,7 @@ public class JwtUtils {
 
 	public String getUserNameFromjwtToken(String token) {
 		return Jwts.parser().setSigningKey(
-				"semillaidDAJ919AKAadopakdakoAKDOAjdk1j9dj1j89dajidjakdj81jd81j8d18j8do0109aopzkd9191jada019")
+				"semillakjdajodajiqwjdkoqdmaskldmaiodmiocmio12j39812jiodajd89wjdi1moadkd9w9kd1kddakdmakodjid1j90d1jalkdlkzp1k010938fldo9k1")
 				.parseClaimsJws(token).getBody().getSubject();
 	}
 }
